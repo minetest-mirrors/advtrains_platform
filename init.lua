@@ -307,12 +307,6 @@ table.insert(nodelist, { name = "snow", tile = "default_snow.png",
 		full = "default:snowblock", 
 		half = "stairs:slab_snowblock" } )
 
--- 2022-06-29   there are two types of stone slabs  
-table.insert(nodelist,  { name = "stone tile", 
-		tile = "default_stone.png", 
-		sound = default.node_sound_stone_defaults(),
-		full = "default:stone", 
-		half = "stairs:slab_stone" } )
 
 
 local adv_track = "advtrains:dtrack_placer"
