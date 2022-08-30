@@ -271,7 +271,7 @@ local woodpath_lengths = {
 }
 
 
--- path crossing track 
+-- path crossing track aka "level crossing"
 
 local snowdef = minetest.registered_nodes['default:snowblock']
 local node_sound_snow_default = nil
@@ -291,17 +291,20 @@ table.insert(nodelist,  { name = "wood",
 		tile = "default_wood.png", 
 		sound = default.node_sound_wood_defaults(),
 		full = "default:wood", 
-		half = "stairs:slab_wood" } )
+		half = "morevlocks:slab_wood" } )  -- fixed
+--		half = "stairs:slab_wood" } )
 table.insert(nodelist,  { name = "cobble", 
 		tile = "default_cobble.png", 
 		sound = default.node_sound_stone_defaults(),
 		full = "default:cobble", 
-		half = "stairs:slab_cobble" } )
+		half = "moreblocks:slab_cobble" } )  -- fixed
+--		half = "stairs:slab_cobble" } )
 table.insert(nodelist,  { name = "stonebrick", 
 		tile = "default_stone_brick.png", 
 		sound = default.node_sound_stone_defaults(),
 		full = "default:stonebrick", 
-		half = "stairs:slab_stonebrick" } )
+		half = "moreblocks:slab_stonebrick" } )   --  fixed
+--		half = "stairs:slab_stonebrick" } )
 table.insert(nodelist, { name = "snow", tile = "default_snow.png", 
 		sound = node_sound_snow_default,
 		full = "default:snowblock", 
